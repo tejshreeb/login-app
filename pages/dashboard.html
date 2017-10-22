@@ -1,0 +1,114 @@
+<style>
+.navbar-inverse {
+  background-color: #bc002c;
+  border-color: #bc002c;
+  border-bottom: 1px solid #B71C1C;
+}
+.navbar {
+  border-radius: 0px;
+}
+button.m-button {
+  background-color: #bc002c;
+  color: white;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.row{margin-left:0px; margin-right:0px;}
+</style>
+</head>
+<body ng-controller="myDashboard">
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid" style="padding: 10px 0px 1px 13px;">
+  <div class="navbar-header">
+    <ul class="list-inline">
+      <li><a><img class="img-responsive" src="logo.png" alt="image" width="50px;" margin="2px 9px 0px 36px;"></a></li>
+      <li><a class="navbar-brand" href="#" style="font-size: 20px; color:black;"><b><span style="color:white;">Fancymonk</span></b></a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<div class="Container-fluid">
+<div class="row" style="">
+  <div class="col-md-3" style="min-height: 560px;background-color: rgba(51, 51, 51, 0.81);margin-top: -20px;">
+    <div class="text-center" style="padding:20px;">
+      <button class="m-button" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Add Restaurant</button>
+    </div>
+  </div>
+  <div class="col-md-9" style="min-height: 560px;margin-top: -20px;">
+    <h4 class="text-center"><b>MY DASHBOARD</b></h4>
+    <div class="table-responsive" >
+      <table class="table table-bordered table-striped" >
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>location</th>
+
+            <th>type</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in todos">
+            <td> {{user.id}}</td>
+              <td>{{user.name}}</td>
+              <td>{{user.location}}</td>
+              <th></th>
+              <td><button class="m-button" onclick="document.getElementById('id03').style.display='block'">Add Restaurant</button></td>
+          </tr>
+        </tbody>
+        <div ng-show="loading" class="loaderSmall" style="top:70%;left:50%;">
+      </table>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div id="id03" class="modal">
+
+<form class="modal-content animate">
+  <div class="my-container">
+
+    <h3 class="text-center">Restaurant Details</h3>
+
+    <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <label><b>Restaurant Name</b></label>
+    <input type="text" placeholder="enter name" name="name" required ng-model="signup.uname">
+
+    <label><b>Restaurant Id</b></label>
+    <input type="text" placeholder="restaurant id" name="number" required ng-model="signup.number">
+
+    <label><b>Location</b></label>
+    <input type="text" placeholder="benglour, kolkata, delhi..." name="name" required ng-model="signup.uname">
+
+    <label><b>Type</b></label>
+    <input type="text" placeholder="veg, non-veg, both" name="name" required ng-model="signup.uname">
+
+    <div class="clearfix">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" ng-click="signUp()">Add</button>
+    </div>
+  </div>
+</form>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+}
+</script>

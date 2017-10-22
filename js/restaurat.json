@@ -1,0 +1,24 @@
+[
+  {
+    "id":"1001",
+    "name":"abc1",
+    "location":"loc1",
+    "type":[
+            {  "vag":"jghj",
+              "non_vag":"lkj"
+            }
+          ],
+    "contact":"lfk",
+  },
+  {
+    "id":"1002",
+    "name":"abc1",
+    "location":"loc1",
+    "type":[
+            {  "vag":"jghj",
+              "non_vag":"lkj"
+            }
+          ],
+    "contact":"lfk",
+  },
+]

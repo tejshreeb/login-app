@@ -1,0 +1,99 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" style="padding: 10px 0px 1px 13px;">
+    <div class="navbar-header">
+      <ul class="list-inline">
+        <li><a><img class="img-responsive" src="images/logo.png" alt="image" width="50px;" margin="2px 9px 0px 36px;"></a></li>
+        <li><a class="navbar-brand" href="#" style="font-size: 20px; color:black;"><b><span style="color:white;">Fancy</span>Monk</b></a></li>
+      </ul>
+    </div>
+  </div></nav>
+
+<div class="bgimg-1">
+    <div class="caption">
+      <div class="fancy text-center">
+        <b><h1 style="color:white;">Fancymonk</h1>
+        <p style="color:white;margin-top: 70px;">Not a Member Yet ? <br> Sign Up Now !</p></b>
+        <button class="m-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <button class="m-button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+      </div>
+    </div>
+</div>
+{{Data.FirstName}}
+<div id="id01" class="modal">
+  <form class="modal-content animate">
+    <div class="my-container">
+      <h1 class="text-center">Login</h1>
+
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password" name="psw" required>
+
+      <button type="submit" ng-click="submit()">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="my-container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn-login">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="id02" class="modal">
+
+  <form class="modal-content animate">
+    <div class="my-container">
+
+      <h1 class="text-center">Signup</h1>
+
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      <label><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" id="name" name="name" required>
+
+      <label><b>Mobile No.</b></label>
+      <input type="text" placeholder="Enter Mobile Number" id="mobile" name="number" required>
+
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" id="email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password" name="psw" required>
+
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn" ng-click="storedata()">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>

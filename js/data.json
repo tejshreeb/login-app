@@ -1,0 +1,53 @@
+[
+  { "id":1001,
+    "name":"abc",
+    "location":"banglore",
+    "type": [
+          {
+            "vag": "tanduri",
+            "non_vag":"murgi"
+          }
+        ]
+  },
+  { "id":1002,
+    "name":"abc",
+    "location":"banglore",
+    "type": [
+          {
+            "vag": "tanduri",
+            "non_vag":"murgi"
+          }
+        ]
+  },
+  { "id":1002,
+    "name":"abc",
+    "location":"banglore",
+    "type": [
+          {
+            "vag": "tanduri",
+            "non_vag":"murgi"
+          }
+        ]
+  },
+  { "id":1003,
+    "name":"abc",
+    "location":"banglore",
+    "type": [
+          {
+            "vag": "tanduri",
+            "non_vag":"murgi"
+          }
+        ]
+  },
+  { "id":1004,
+    "name":"abc",
+    "location":"banglore",
+    "type": [
+          {
+            "vag": "tanduri",
+            "non_vag":"murgi"
+          }
+        ]
+  }
+
+]

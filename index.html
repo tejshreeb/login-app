@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FancyMonk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src = "js/data.json"></script>
+  <link rel="stylesheet" href="css/login_signup.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .navbar-inverse {
+      background-color: #bc002c;
+      border-color: #bc002c;
+      border-bottom: 1px solid #B71C1C;
+  }
+  .navbar {
+      border-radius: 0px;
+  }
+  .bgimg-1 {
+      background-image: url("images/main.jpg");
+      min-height: 560px;
+      margin-top: -20px;
+      height: 100%;
+  }
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+      position: relative;
+      /*opacity: 0.65;*/
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .caption {
+      position: absolute;
+      left: 0;
+      top: 10%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+  }
+  .fancy.text-center{background-color: rgba(0, 0, 0, 0.44);padding: 6px 0px 100px 0px;}
+ </style>
+</head>
+<body ng-app="myApp" ng-controller="loginCtrl">
+  <ng-view></ng-view>
+    <script src="js/app.js"></script>
+</body>
+</html>
